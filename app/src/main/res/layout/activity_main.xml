@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editText_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search for a word"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/button_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:backgroundTint="@color/lavender_shade"
+        android:textAllCaps="true"
+        android:textSize="16dp"
+        android:layout_below="@id/editText_search"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textView_meaning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:layout_below="@id/button_search"
+        android:layout_marginBottom="8dp" />
+
+    <ListView
+        android:id="@+id/listView_history"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_below="@id/textView_meaning"
+        android:layout_above="@id/button_clear_history"
+        android:paddingTop="16dp" />
+
+    <Button
+        android:id="@+id/button_clear_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear History"
+        android:backgroundTint="@color/lavender_shade"
+        android:textAllCaps="true"
+        android:textSize="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
